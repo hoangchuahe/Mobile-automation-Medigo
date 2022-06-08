@@ -1,4 +1,4 @@
-package org.example;
+package parallel_test;
 
 import env.mainlogin;
 import io.appium.java_client.AppiumDriver;
@@ -6,15 +6,9 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import org.testng.annotations.Test;
 
-
-public class AppTest {
-
-    public static void main(String [] args) throws InterruptedException {
-
-    }
-
+public class phamacy {
     @Test
-    public void user() throws InterruptedException {
+    public void test1() throws InterruptedException {
         AppiumDriver<MobileElement> driver = mainlogin.getDriver("emulator-5556", "xyz.medigo.pharmacy", "xyz.medigo.pharmacy.ui.login.loginpharcode.LoginPharCodeActivity");
         MobileElement el2 = (MobileElement) driver.findElementById("xyz.medigo.pharmacy:id/login_phar_code");
         el2.click();
@@ -32,24 +26,6 @@ public class AppTest {
         el7.click();
 
     }
-    @Test
-    public void phamacy() throws InterruptedException {
-        AppiumDriver<MobileElement> user = mainlogin.getDriver("emulator-5554", "xyz.medigo.user", "xyz.medigo.user.ui.login.LoginActivity");
-        //Thread.sleep(1000);
-        MobileElement e4 = (MobileElement) user.findElementById("xyz.medigo.user:id/edtPhoneNumber");
-//        el4.click();
-        e4.sendKeys("0848226326");
-        MobileElement e5 = (MobileElement) user.findElementById("xyz.medigo.user:id/btnGetSMSCode");
-        e5.click();
-        MobileElement e6 = (MobileElement) user.findElementById("xyz.medigo.user:id/txt_pin_entry");
-        e6.click();
-        e6.sendKeys("123456");
-        MobileElement e7 = (MobileElement) user.findElementById("xyz.medigo.user:id/btnVerifySMSCode");
-        e7.click();
-        //Thread.sleep(1000);
-        MobileElement e8 = (MobileElement) user.findElementById("xyz.medigo.user:id/tv_allow_location");
-        e8.click();
-        MobileElement e9 = (MobileElement) user.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
-        e9.click();
-    }
 }
+
+
