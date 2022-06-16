@@ -1,3 +1,1 @@
-org/example/AppTest.class
-org/example/RunCucumber.class
-org/example/StepDef.class
+test/SimpleTest.class
