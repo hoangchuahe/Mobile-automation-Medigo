@@ -13,7 +13,7 @@ Update app url, your BrowserStack accesskey in user.java and pharmacy.java.
 <img width="1920" alt="image" src="https://user-images.githubusercontent.com/93819009/174532072-d1708290-ed5b-4ce0-ad07-b3197f50fd5a.png">
 
 # The session report will show on BrowserStack dashboard, it contain:
--View session meta-information such as OS, browser, duration, and status.
+- View session meta-information such as OS, browser, duration, and status.
 - Video recording to see the entire test in action and debug failed tests.
 - Session logs for debugging. For example, use Text Logs to identify all the steps executed in the test.
 <img width="1919" alt="image" src="https://user-images.githubusercontent.com/93819009/174528957-9ea0eef6-8258-4974-9225-25d6cb4be549.png">
