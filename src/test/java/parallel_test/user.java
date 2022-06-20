@@ -17,7 +17,10 @@ public class user {
     public void user_test() throws InterruptedException {
         AppiumDriver<MobileElement> user;
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("app", "bs://121c553fa8b4031b6789e7cbc1cf4b948bb5c01b");
+        // set account and app url
+        cap.setCapability("app", "bs://d6ad265a7932455175b7a286c022817eab8f36ec");
+        cap.setCapability("browserstack.user", "hongphmnht_rEBk4M");
+        cap.setCapability("browserstack.key", "NJmuSSqNFNnRb4u8feqJ");
         // Specify device and os_version for testing
         cap.setCapability("device", "Google Pixel 4");
         cap.setCapability("os_version", "11.0");
@@ -25,8 +28,6 @@ public class user {
         cap.setCapability("project", "First Java Project");
         cap.setCapability("build", "Java Android");
         cap.setCapability("name", "first_test");
-        cap.setCapability("browserstack.user", "hongphmnht_rEBk4M");
-        cap.setCapability("browserstack.key", "NJmuSSqNFNnRb4u8feqJ");
         cap.setCapability("browserstack.networkLogs", "true");
         try {
             URL url = new URL("http://hub.browserstack.com/wd/hub");

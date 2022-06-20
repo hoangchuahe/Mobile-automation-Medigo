@@ -16,12 +16,15 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class phamacy {
+public class pharmacy {
     @Test
     public void pharmacy() throws InterruptedException {
         AppiumDriver<MobileElement> driver;
         DesiredCapabilities cap = new DesiredCapabilities();
+        // set account and app url
         cap.setCapability("app", "bs://14441978112bf040038ac8ec2b7baf8bf6b4fc25");
+        cap.setCapability("browserstack.user", "hongphmnht_867wko");
+        cap.setCapability("browserstack.key", "zJNtdj3Fi5ZHmiGcWoBY");
         // Specify device and os_version for testing
         cap.setCapability("device", "Samsung Galaxy S10e");
         cap.setCapability("os_version", "9.0");
@@ -29,8 +32,6 @@ public class phamacy {
         cap.setCapability("project", "First Java Project");
         cap.setCapability("build", "Java Android");
         cap.setCapability("name", "first_test");
-        cap.setCapability("browserstack.user", "hongphmnht_867wko");
-        cap.setCapability("browserstack.key", "zJNtdj3Fi5ZHmiGcWoBY");
         cap.setCapability("browserstack.networkLogs", "true");
         try {
             URL url = new URL("http://hub.browserstack.com/wd/hub");
